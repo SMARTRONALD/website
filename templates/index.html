@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="personal-info">
+        <h1>{{ name }}</h1>
+        <p>{{ location }}</p>
+        <p>Phone: {{ phone }}</p>
+        <p>Email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <p><a href="{{ linkedin }}" target="_blank">LinkedIn</a> | <a href="{{ github }}" target="_blank">GitHub</a></p>
+    </section>
+
+    <section class="professional-summary">
+        <h2>Professional Summary</h2>
+        <p>{{ professional_summary }}</p>
+    </section>
+{% endblock %}

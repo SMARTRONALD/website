@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Education & Certifications</h2>
+    {% for entry in education %}
+        <div class="education">
+            <h3>{{ entry.degree }}</h3>
+            <p>{{ entry.institution }} | {{ entry.duration }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
